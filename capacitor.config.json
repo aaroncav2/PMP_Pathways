@@ -1,0 +1,6 @@
+{
+  "appId": "com.yourname.pmppathways",
+  "appName": "PMP Pathways",
+  "webDir": "www",
+  "android": { "adjustMarginsForEdgeToEdge": "auto" }
+}
