@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+sed -i "s/minSdkVersion = [0-9]*/minSdkVersion = 24/" android/variables.gradle
 APP_ID=$(node -p "require('./www/admob.config.json').appId")
 MANIFEST=android/app/src/main/AndroidManifest.xml
 if ! grep -q "gms.ads.APPLICATION_ID" "$MANIFEST"; then
